@@ -1,6 +1,6 @@
 import aiosqlite
-from config import DB_PATH
-from contextlib import asynccontaxtmanager
+from config import DP_PATH
+from contextlib import asynccontextmanager
 
 @asynccontextmanager
 async def get_db():

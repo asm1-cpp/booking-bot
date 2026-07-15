@@ -8,6 +8,7 @@ async def get_db():
     try:
         yield db
     finally:
+        await db.commit()
         await db.close()
 
 async def init_db():
